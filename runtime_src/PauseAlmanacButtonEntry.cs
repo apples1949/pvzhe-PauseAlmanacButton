@@ -253,7 +253,7 @@ public sealed class PauseAlmanacButtonEntry : IXWModRuntimeEntry
 		{
 			if (_tree == null || !GodotObject.IsInstanceValid(_tree)) { return; }
 
-			if (true)    /* ★ 用户要求：日志默认关闭（原：!ReadBool(KEnabled, true)） */
+			if (!ReadBool(KEnabled, true))
 			{
 				return;
 			}
